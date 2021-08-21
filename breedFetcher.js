@@ -9,7 +9,6 @@ const findDescription = (data) => {
 };
 
 const fetchBreedDescription = function(breedName, callback) {
-  
   request(`https://api.thecatapi.com/v1/breeds/search?q=${breedName}`, (error, response, body) => {
 
     if (!error) {
